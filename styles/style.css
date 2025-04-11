@@ -13,12 +13,10 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background-image: 
-    repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
-    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px), 
+  background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+    repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
     linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   background-repeat: no-repeat;
-  background-size: 100%;
   font-family: var(--main-font);
   background-attachment: fixed;
   padding: 100px 0;
@@ -30,10 +28,8 @@
   justify-self: center;
   align-items: center;
   gap: 20px;
-  padding: 
-        clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) 
-        0 
-        clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem);
+  padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) 0
+    clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem);
   background-color: #fff;
   font-family: var(--accent-font, sans-serif);
   border: 2px solid #000;
@@ -64,40 +60,50 @@
   flex-direction: column;
   background-color: #fff;
   color: #000;
-
 }
 
 .card-title {
-font-size: var(--main-font-size, 18px);
-border: 2px solid #000;
-padding-inline-start: 10px;
-padding-block: 3px;
-
+  font-size: var(--main-font-size, 18px);
+  border: 2px solid #000;
+  padding-inline-start: 10px;
+  padding-block: 3px;
 }
 
 .card-cover {
-background-image: url(../images/0start.jpg);
-background-position: center;
-background-size: cover;
-border-inline: 2px solid #000;
+  position: relative;
+  display: flex;
+  border-inline: 2px solid #000;
+  block-size: clamp(23.438rem, 16.373rem + 30.141vw, 43.5rem);
+}
+
+.img {
+  object-fit: cover;
+  filter: saturate(0.8);
+  inline-size: 100%;
+  overflow: hidden;
+}
+
+.img-free_track {
+  object-position: bottom;
 }
 
 .card-logo {
-  padding: 25px 25px 659px;
+  position: absolute;
+  inset: 0;
+  padding-block-start: 25px;
+  padding-inline-end: clamp(0.813rem, 0.548rem + 1.127vw, 1.563rem);
   text-align: end;
   font-family: var(--accent-font);
   font-size: 14px;
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  
 }
 
 @supports (-webkit-text-stroke: 1px #fff) {
   .card-logo {
-    -webkit-text-stroke: 1px #fff ;
+    -webkit-text-stroke: 1px #fff;
   }
 }
-
 
 .card_text-block {
   padding: 25px;
@@ -113,5 +119,4 @@ border-inline: 2px solid #000;
 }
 
 .rect-button {
-  
 }
