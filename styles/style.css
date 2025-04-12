@@ -13,13 +13,17 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  background-image: repeating-linear-gradient(90deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
+  background-image: repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0 2px,
+      rgb(0 0 0 / 0) 2px 4px
+    ),
     repeating-linear-gradient(180deg, #d3d3d3 0 2px, rgb(0 0 0 / 0) 2px 4px),
     linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%);
   background-repeat: no-repeat;
   font-family: var(--main-font);
   font-size: var(--main-font-size, 18px);
-  background-attachment: fixed;
+  background-size: cover;
   padding: 100px 0;
 }
 
@@ -103,7 +107,8 @@
   mix-blend-mode: hard-light;
 }
 
-@supports ((text-stroke: 1px var(--logo_stroke-color)) or (-webkit-text-stroke: 1px var(--logo_stroke-color))) {
+@supports ((text-stroke: 1px var(--logo_stroke-color)) or 
+          (-webkit-text-stroke: 1px var(--logo_stroke-color))) {
   .card-logo {
     text-shadow: none;
     -text-stroke: 1px var(--logo_stroke-color, #fff);
@@ -119,15 +124,24 @@
   font-size: 18px;
 }
 
+.card_button_container {
+  display: flex;
+  justify-self: end;
+  padding: 25px 0 0 0;
+}
+
 .icon {
   width: 21px;
   z-index: 1;
   mix-blend-mode: difference;
 }
+
+.like-icon {
+
+}
 /*--------------------buttons-----------------------*/
+
 .button {
-  width: 130px;
-  height: 38px;
   color: #fff;
   background-color: transparent;
   border: none;
@@ -135,45 +149,63 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-}
-
-.mask_border {
   position: relative;
   display: flex;
   border: 2px solid black;
-  inline-size: 100%;
-  block-size: 100%;
-  justify-content: center;
-
+  overflow: hidden;
 }
-.mask_border:after {
+
+.button:after {
   content: "";
   position: absolute;
   inset: 0;
   background-color: #000;
   transform-origin: left;
-  transform: scaleX(0);
+  transform: translateX(-100%);
   transition: transform 0.5s ease-in-out;
 }
 
-.button:hover .mask_border:after {
-  transform: scaleX(1);
+.button:hover:after {
+  transform: translateX(0%);
 }
 
 .button__text {
   position: relative;
-  z-index: 10;
+  z-index: 1;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 90%;
   text-align: center;
   mix-blend-mode: difference;
 }
 
+.card__like-button {
+  inline-size: 130px;
+  block-size: 38px;
+}
 
+.footer_button {
+  inline-size: 335px;
+  block-size: 55px;
+  gap: 15px;
+  position: relative;
+}
 
-/*--------------------buttons-----------------------*/
+.dialog_button {
+inline-size: 100%;
+block-size: 38px;
+}
 
+.like-icon {
+  block-size: 36px;
+  inline-size: 39px;
+}
 
-
+.card__icon-button {
+  border: none;
+  background-color: transparent;
+}
+/*--------------------/buttons-----------------------*/
 
 .footer {
   justify-self: center;
@@ -181,3 +213,52 @@
   margin-top: 50px;
 }
 
+.dialog_window[open] {
+  position:fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+
+  inset: 50% 0;
+  margin-inline: auto;
+  width: 357px;
+  padding: 30px;
+
+
+}
+
+.dialog_content-container {
+  display: flex;
+  justify-items: center;
+ gap:20px;
+ line-height: 150%;
+}
+
+.dialog_icon {
+  mix-blend-mode: normal;
+  min-inline-size: 39px;
+  min-block-size: 39px;
+}
+
+.dialog_text{
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.dialog_form {
+  inline-size: 100%;
+}
+
+.dialog_window[open]::backdrop {
+  background-color: rgb(0 0 0 / 0.75);
+
+}
+
+.page:has(dialog[open]) {
+  overflow-y: hidden;
+  padding-inline-end: 15px; /* компенсация скрытия скролла */
+}
