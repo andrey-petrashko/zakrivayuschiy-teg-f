@@ -185,15 +185,15 @@
 }
 
 .footer_button {
-  inline-size: 335px;
-  block-size: 55px;
+  inline-size: clamp(19.125rem, 18.487rem + 2.72vw, 20.938rem);
+  padding-block: 13px;
   gap: 15px;
   position: relative;
 }
 
 .dialog_button {
 inline-size: 100%;
-block-size: 38px;
+padding-block: 11px;
 }
 
 .like-icon {
@@ -223,7 +223,7 @@ block-size: 38px;
 
   inset: 50% 0;
   margin-inline: auto;
-  width: 357px;
+  inline-size: clamp(21.313rem, 20.96rem + 1.5vw, 22.313rem);
   padding: 30px;
 
 
@@ -261,4 +261,19 @@ block-size: 38px;
 .page:has(dialog[open]) {
   overflow-y: hidden;
   padding-inline-end: 15px; /* компенсация скрытия скролла */
+}
+
+@media (width <= 375px) {
+  .footer_button {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .header {
+    inline-size: 100vw;
+  }
+
+  .main {
+    inline-size: 100vw;
+  }
 }
