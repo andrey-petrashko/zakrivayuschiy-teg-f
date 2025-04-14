@@ -124,7 +124,10 @@
 .card_button_container {
   display: flex;
   justify-self: end;
-  padding: 25px 0 0 0;
+  padding: 25px 0 25px 0;
+  block-size: 38px;
+  border: none;
+  align-items: center;
 }
 
 .icon {
@@ -200,18 +203,28 @@
 }
 
 .like-icon {
-  block-size: 38px;
+  block-size: 34px;
   inline-size: 39px;
 }
 
-.card__icon-button:focus{
-  outline: none;
-}
 
 .card__icon-button {
-  border: none;
+  block-size: 34px;
+  inline-size: 45px;
   background-color: transparent;
+  outline: none;
+  border: none;
 }
+
+
+.card__icon-button:hover {
+  outline: none;
+
+  outline: 2px solid black;
+
+}
+
+
 /*--------------------/buttons-----------------------*/
 
 .footer {
