@@ -128,6 +128,7 @@
   block-size: 38px;
   border: none;
   align-items: center;
+  gap: 10px;
 }
 
 .icon {
@@ -203,27 +204,25 @@
 }
 
 .like-icon {
-  block-size: 34px;
-  inline-size: 39px;
-}
 
+}
 
 .card__icon-button {
-  block-size: 34px;
-  inline-size: 45px;
+  display: flex;
+  block-size: 38px;
+  align-items: center;
+  padding: 0;
   background-color: transparent;
-  outline: none;
-  border: none;
+  border: 2px solid transparent;
+}
+.card__icon-button .sparks {
+  opacity: 0;
 }
 
-
-.card__icon-button:hover {
-  outline: none;
-
-  outline: 2px solid black;
-
+.card__icon-button:hover .core{
+  fill: var(--accent-color);
+  transition: color 3s;
 }
-
 
 /*--------------------/buttons-----------------------*/
 

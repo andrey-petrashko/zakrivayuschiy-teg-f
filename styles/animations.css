@@ -9,3 +9,12 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+.card__icon-button {
+    transition: border-color 0.3s;
+}
+
+.card__icon-button:focus-visible {
+    outline: none;
+    border-color: #000;
+}
