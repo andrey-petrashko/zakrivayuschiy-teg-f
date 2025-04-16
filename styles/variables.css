@@ -1,8 +1,8 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-    --main-font: Inter-Variable;
-    --main-font-size: 14px;
+
+
     --accent-font-size: 14px;
     --accent-color: #000;
     --main-color: #000;
@@ -17,6 +17,8 @@
     --fill-color: #f00;
 
 }
-.page {
 
+.page {
+    --main-font-size: 18px;
+    --main-font: Inter-Variable;
 }

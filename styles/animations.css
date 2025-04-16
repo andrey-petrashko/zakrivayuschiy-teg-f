@@ -10,11 +10,96 @@
 
 */
 
+/* Добавил промежуточные 50% keyframes для плавности анимации */
+@keyframes haertimation-scale {
+  0% {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.25;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes haertimation-sparkation {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 .card__icon-button {
-    transition: border-color 0.3s;
+  transition: border-color 0.3s;
 }
 
 .card__icon-button:focus-visible {
-    outline: none;
-    border-color: #000;
+  outline: none;
+  border-color: var(--accent-color, #000);
+}
+
+.card__icon-button .contour {
+  transition: fill 0.1s linear;
+  fill: var(--accent-color, #000);
+}
+
+.card__icon-button:not(:hover) .core {
+  transition: fill 0.3s 0s;
+  fill: transparent;
+}
+
+.card__icon-button:hover .core {
+  transition: fill 0.3s;
+  fill: var(--accent-color, #000);
+}
+
+.card__icon-button:not(:hover) .main-body {
+  transition: fill 0.3s 0.05s;
+  fill: transparent;
+}
+
+.card__icon-button:hover .main-body {
+  transition: fill 0.3s 0.05s;
+  fill: var(--accent-color, #000);
+}
+
+.card__icon-button:active .main-body {
+  fill: var(--fill-color, #f00);
+}
+.card__icon-button:active .core {
+  fill: var(--fill-color, #f00);
+}
+
+.like-icon.is-liked .sparks {
+  animation: haertimation-sparkation 0.3s 0.3s ease-in forwards;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: 50%;
+  animation: haertimation-scale 0.3s 0.1s ease-in forwards;
+}
+.like-icon.is-liked .contour {
+  fill: var(--fill-color, #f00);
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--fill-color, #f00);
+}
+
+.like-icon.is-liked .core {
+  fill: var(--fill-color, #f00);
+}
+
+.like-icon.is-liked .contour {
+  transition: fill 0.3s 0.06s;
+  fill: var(--fill-color, #f00);
 }
