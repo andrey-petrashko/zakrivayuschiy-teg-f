@@ -85,9 +85,17 @@
   object-fit: cover;
 }
 
-.img-free_track {
+.free_track .img {
   filter: saturate(0.8);
   object-position: bottom;
+}
+
+.first_sprint_clear .img {
+  filter: sepia(50%) contrast(1.15);
+}
+
+.first_sprint_doubt .img {
+  filter: saturate(2.5);
 }
 
 .card-logo {
