@@ -24,27 +24,27 @@
   </header>
   <main class="main">
 
-    <article class="card free_track">
+    <article class="card">
       <h2 class="card-title">Фритрек и нулевой спринт: Подготовка к работе</h2>         
       <div class="card-cover">
         <img 
-        class="img" 
+        class="img free_track" 
         src="./images/0start.jpg" 
         alt="Железная кружка в руке с надписью The adventure begins на фоне озера, окруженного деревьями" 
         loading="lazy">
-        </img>
         <p class="card-logo">&lt;/preparing&gt;</p>
       </div>
       <div class="card_text-block">
-        <span class="card-text"> <p>Это было самое начало пути. На этом этапе важно было проникнуться основами
+        <div class="cart_text">
+        <p>Это было самое начало пути. На этом этапе важно было проникнуться основами
           и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
-          <p>Еще до начала обучения сомневался в выборе курса, склоняясь больше к бэкенду, но в итоге решил изучить фулстек. 
+        <p>Еще до начала обучения сомневался в выборе курса, склоняясь больше к бэкенду, но в итоге решил изучить фулстек. 
             Знания, полученные в рамках спринтов по фронтенду, лишними точно не будут. А углубиться в определенном 
             направлении всегда можно. Может, мне фронтенд понравится больше? Выводы будут после окончания обучения…</p>
-        </span>
+        </div>
         <div class="card_button_container">
-          <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button" aria-label="Поставить лайк">
+            <svg class="like-icon" aria-hidden="true" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 
                     15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 
@@ -63,37 +63,36 @@
                   0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--fill-color, #f00)"/>
                 </svg>
           </button>
-          <button class="button card__like-button" >
-            <span class="button__text">Like</span>
+          <button type="button" class="button card__like-button" >
+            <p class="button__text">Like</p>
           </button>
         </div>
       </div> 
     </article>
 
-    <article class="card first_sprint_clear">
+    <article class="card">
       <h2 class="card-title">1 спринт: Я — чистый лист</h2>         
       <div class="card-cover">
         <img 
-        class="img" 
+        class="img first_sprint_clear" 
         src="./images/1without_content.jpg" 
         alt="Руки лежат на клавишах печатной машинки CORONA со вставленным чистым листом бумаги" 
         loading="lazy">
-        </img>
         <p class="card-logo">&lt;/start&gt;</p>
       </div>
       <div class="card_text-block">
-        <span class="card-text">
-          <p> На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — 
+        <div class="cart_text">
+        <p> На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — 
           страх перед чистым листом. Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением 
           скрываются более глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?
         </p>
-      <p>Изучив материалы спринта, настало время приступить к первому проекту. Я не знал, с чего начать. 
-        Был какой-то ступор. Пару часов полистал ещё раз материал спринта и, поймав вдохновение, начал писать первые теги…
-      </p>
-        </span>
+        <p>Изучив материалы спринта, настало время приступить к первому проекту. Я не знал, с чего начать. 
+          Был какой-то ступор. Пару часов полистал ещё раз материал спринта и, поймав вдохновение, начал писать первые теги…
+        </p>
+        </div>
         <div class="card_button_container">
-          <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button" aria-label="Поставить лайк">
+            <svg class="like-icon" aria-hidden="true" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 
                     15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 
@@ -112,36 +111,35 @@
                   0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--fill-color, #f00)"/>
                 </svg>
           </button>
-          <button class="button card__like-button" >
-            <span class="button__text">Like</span>
+          <button type="button" class="button card__like-button" >
+            <p class="button__text">Like</p>
           </button>
         </div>
       </div> 
     </article>
 
-    <article class="card first_sprint_doubt">
+    <article class="card">
       <h2 class="card-title">1 спринт: А если не получится?</h2>         
       <div class="card-cover">
         <img 
-        class="img" 
+        class="img first_sprint_doubt" 
         src="./images/1doubt.jpg" 
         alt="Забавная обезьяна делает вид что думает, или сомневается." 
         loading="lazy">
-        </img>
         <p class="card-logo">&lt;/doubt&gt;</p>
       </div>
       <div class="card_text-block">
-        <span class="card-text">
-          <p> Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться 
+        <div class="cart_text">
+        <p> Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться 
             ожиданием провала. Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
         </p>
-      <p> Несомненно, уверенность в себе и в своих возможностях значительно окрепла после первой работы. Была даже какая-то эйфория. 
-        Но я понимал, что дальше будет сложнее, но от того и гораздо интереснее...
-      </p>
-        </span>
+        <p> Несомненно, уверенность в себе и в своих возможностях значительно окрепла после первой работы. Была даже какая-то эйфория. 
+          Но я понимал, что дальше будет сложнее, но от того и гораздо интереснее...
+        </p>
+        </div>
         <div class="card_button_container">
-          <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button" aria-label="Поставить лайк">
+            <svg class="like-icon" aria-hidden="true" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 
                     15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 
@@ -160,38 +158,37 @@
                   0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--fill-color, #f00)"/>
                 </svg>
           </button>
-          <button class="button card__like-button" >
-            <span class="button__text">Like</span>
+          <button type="button" class="button card__like-button" >
+            <p class="button__text">Like</p>
           </button>
         </div>
       </div> 
     </article>
 
-    <article class="card second_sprint_ideal">
+    <article class="card">
       <h2 class="card-title">2 спринт: Погоня за идеалом</h2>         
       <div class="card-cover">
         <img 
-        class="img" 
+        class="img second_sprint_ideal" 
         src="./images/2ideal.jpg" 
         alt="Четыре руки держащие друг друга образуют квадрат" 
         loading="lazy">
-        </img>
         <p class="card-logo">&lt;/done&gt;</p>
       </div>
       <div class="card_text-block">
-        <span class="card-text">
-          <p> На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много 
+        <div class="cart_text">
+        <p> На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много 
             ещё впереди. Вы могли попытаться погнаться за идеалом и понять, что он недостижим. А, может, вы 
             вовсе и не подвержены перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.
         </p>
-      <p> Хотелось сделать и идти дальше. После сохранения возникало сомнение о достаточности проделанного. 
-        И так, постепенно, от сохранения к сохранению, проекты приближались к идеалу. Ревьюверы тоже не мало этому 
-        способствовали. Но изначально я не перфекционист и за идеалом не гнался...
-      </p>
-        </span>
+        <p> Хотелось сделать и идти дальше. После сохранения возникало сомнение о достаточности проделанного. 
+            И так, постепенно, от сохранения к сохранению, проекты приближались к идеалу. Ревьюверы тоже не мало этому 
+            способствовали. Но изначально я не перфекционист и за идеалом не гнался...
+        </p>
+        </div>
         <div class="card_button_container">
-          <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button" aria-label="Поставить лайк">
+            <svg class="like-icon" aria-hidden="true" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 
                     15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 
@@ -210,45 +207,44 @@
                   0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--fill-color, #f00)"/>
                 </svg>
           </button>
-          <button class="button card__like-button" >
-            <span class="button__text">Like</span>
+          <button type="button" class="button card__like-button" >
+            <p class="button__text">Like</p>
           </button>
         </div>
       </div> 
     </article>
 
-    <article class="card second_sprint_support">
+    <article class="card">
       <h2 class="card-title">2 спринт: О тех, кто рядом</h2>         
       <div class="card-cover">
         <img 
-        class="img" 
+        class="img second_sprint_support" 
         src="./images/2support.jpg" 
         alt="Надпись выложеннаяя из деревянных костяшек - Done is better than perfect" 
         loading="lazy">
-        </img>
         <p class="card-logo">&lt;SUPPORT&gt;</p>
       </div>
       <div class="card_text-block">
-        <span class="card-text">
-          <p> Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против 
+        <div class="cart_text">
+        <p> Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против 
             целого мира). Вас окружали одногруппники, команда сопровождения и просто близкие люди, 
             которым можно пожаловаться, если очередной макет просто так не поддавался. Осваивать что-то 
             новое легче, когда рядом есть единомышленники, не правда ли?
         </p>
-      <p> Иногда случались моменты, когда было трудно и непонятно. Руки опускались, возникали сомнения.
-        Заходил в пачку, хотел просить помощи, но каждый раз находил нужное для себя направление мысли 
-        для решения возникших сложностей. Так же из переписки видишь, что кто-то уже выполнил работу, у него все получилось,
-        всё реально и выполнимо. Возникала дополнительная мотивация - я тоже смогу! Отдельное Спасибо за поддержку и советы
-        наставнику Иванову Максиму - очень помог!
-      </p>
-      <p>
-        Ну и отдельно поддержка семьи. В часы отведенные для учебы не дергали по пустякам. В трудные (непонятные) моменты старались подбодрить.
-        По завершению очередного проекта радовались не меньше меня... 
-      </p>
-        </span>
+        <p> Иногда случались моменты, когда было трудно и непонятно. Руки опускались, возникали сомнения.
+            Заходил в пачку, хотел просить помощи, но каждый раз находил нужное для себя направление мысли 
+            для решения возникших сложностей. Так же из переписки видишь, что кто-то уже выполнил работу, у него все получилось,
+            всё реально и выполнимо. Возникала дополнительная мотивация - я тоже смогу! Отдельное Спасибо за поддержку и советы
+            наставнику Иванову Максиму - очень помог!
+        </p>
+        <p>
+            Ну и отдельно поддержка семьи. В часы отведенные для учебы не дергали по пустякам. В трудные (непонятные) моменты старались подбодрить.
+            По завершению очередного проекта радовались не меньше меня... 
+        </p>
+        </div>
         <div class="card_button_container">
-          <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button" aria-label="Поставить лайк">
+            <svg class="like-icon" aria-hidden="true" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 
                     15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 
@@ -267,40 +263,39 @@
                   0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--fill-color, #f00)"/>
                 </svg>
           </button>
-          <button class="button card__like-button" >
-            <span class="button__text">Like</span>
+          <button type="button" class="button card__like-button" >
+            <p class="button__text">Like</p>
           </button>
         </div>
       </div> 
     </article>
 
-    <article class="card third_sprint_hands">
+    <article class="card">
       <h2 class="card-title">3 спринт: Когда опускаются руки</h2>         
       <div class="card-cover">
         <img 
-        class="img" 
-        src="./images/3believe.jpg" 
+        class="img third_sprint_hands"
+        src="./images/3believe.jpg"
         alt="Девушка держит кружку с надписью - believe in yourself" 
         loading="lazy">
-        </img>
         <p class="card-logo">&lt;believe&gt;</p>
       </div>
       <div class="card_text-block">
-        <span class="card-text">
-          <p> Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и 
+        <div class="cart_text">
+        <p> Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и 
             проектную пора сдавать, и задачи хочется порешать, и в теории получше разобраться, и жизнь 
             не забыть пожить. В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.
         </p>
-      <p> 
-        Были и такие моменты. Наваливается всё и сразу и со всех сторон. И дэдлайн на носу и на работе завал, давно никуда не выходили с детьми, ещё и коммандировка намечается.
-        Хотелось всё бросить. Но позже приходит осознание, что это всё временные трудности. Обучение надо (и хочется) продолжать.
-        Вспоминал о пройденных этапах, как они мне давались и что я думал о возникших затруднениях по завершению проектных, когда ревьювер пишет, что
-        работа принята и к ней нет замечаний. Главное не сдаваться и верить в себя... 
-      </p>
-        </span>
+        <p> 
+            Были и такие моменты. Наваливается всё и сразу и со всех сторон. И дэдлайн на носу и на работе завал, давно никуда не выходили с детьми, ещё и коммандировка намечается.
+            Хотелось всё бросить. Но позже приходит осознание, что это всё временные трудности. Обучение надо (и хочется) продолжать.
+            Вспоминал о пройденных этапах, как они мне давались и что я думал о возникших затруднениях по завершению проектных, когда ревьювер пишет, что
+            работа принята и к ней нет замечаний. Главное не сдаваться и верить в себя... 
+        </p>
+        </div>
         <div class="card_button_container">
-          <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button" aria-label="Поставить лайк">
+            <svg class="like-icon" aria-hidden="true" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 
                     15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 
@@ -319,39 +314,38 @@
                   0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--fill-color, #f00)"/>
                 </svg>
           </button>
-          <button class="button card__like-button" >
-            <span class="button__text">Like</span>
+          <button type="button" class="button card__like-button" >
+            <p class="button__text">Like</p>
           </button>
         </div>
       </div> 
     </article>
 
-    <article class="card fourth_sprint_imhere">
+    <article class="card">
       <h2 class="card-title">«Сейчас я здесь»</h2>         
       <div class="card-cover">
         <img 
-        class="img" 
+        class="img fourth_sprint_imhere" 
         src="./images/4youarehere.jpg" 
         alt="Ноги в туфлях в круге с надписью - you are here" 
         loading="lazy">
-        </img>
         <p class="card-logo">&lt;experience&gt;</p>
       </div>
       <div class="card_text-block">
-        <span class="card-text">
-          <p> Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». 
+        <div class="cart_text">
+        <p> Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала про «красотищу». 
             Во-вторых, с окончанием курса учёба не заканчивается. Вёрстка — это целый мир. И этот мир постоянно меняется. 
             Познать его полностью не получится, но это тот случай, когда важен сам процесс познания. Ведь часто путь — и есть результат.
         </p>
-      <p> 
-          Материалы по вёрстке данные в данном курсе это лишь необходимый минимум для дальнейшей ориентации в теме, вектор, направление...
-          Тема безусловно интересная и захватывающая. Но также интересно что же нас ждёт впереди? Как я и писал в первой карточке, время покажет,
-          возможно в дальнейшем буду углубляться в фронтенд... 
-      </p>
-        </span>
+        <p> 
+            Материалы по вёрстке данные в данном курсе это лишь необходимый минимум для дальнейшей ориентации в теме, вектор, направление...
+            Тема безусловно интересная и захватывающая. Но также интересно что же нас ждёт впереди? Как я и писал в первой карточке, время покажет,
+            возможно в дальнейшем буду углубляться в фронтенд... 
+        </p>
+        </div>
         <div class="card_button_container">
-          <button class="card__icon-button">
-            <svg class="like-icon" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button" aria-label="Поставить лайк">
+            <svg class="like-icon" aria-hidden="true" width="39" height="38" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g class="heart">
                   <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 
                     15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 
@@ -370,24 +364,26 @@
                   0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--fill-color, #f00)"/>
                 </svg>
           </button>
-          <button class="button card__like-button" >
-            <span class="button__text">Like</span>
+          <button type="button" class="button card__like-button" >
+            <p class="button__text">Like</p>
           </button>
         </div>
       </div> 
     </article>
 
-  </main>
-  <footer class="footer">
-    <button class="button footer_button" type="button" 
+
+  <div class="save">
+    <button class="button save_button" type="button" 
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id">
       <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
         <use href="./svg/disk.svg#save-icon"></use>
       </svg>
-      <span class="button__text">Сохранить на память</span>
+      <p class="button__text">Сохранить на память</p>
     </button>
-  </footer>
+  </div>
+
+</main>
 
   <dialog id="dialog-id" class="dialog_window">
     <div class="dialog_content-container">
@@ -398,16 +394,12 @@
       дискету, чтобы продолжить</p>
     </div>
     <form method="dialog" class="dialog_form">
-      <button class="button dialog_button">
-        <span class="button__text">OK</span>
+      <button type="submit" class="button dialog_button">
+        <p class="button__text">ok</p>
       </button>
     </form>
   </dialog>
 
   <script src="./scripts/like.js"></script>
 </body>
-
-</html>
-
-
-  
+</html> 

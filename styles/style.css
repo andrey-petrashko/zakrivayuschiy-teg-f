@@ -18,9 +18,12 @@
     linear-gradient(180deg, #e7e7e7 0%, #e7e7e7 0.01%, #1a1a1a 100%)
   );
   background-repeat: no-repeat;
-  font-family: var(--main-font);
+  font-family: var(--main-font, arial, sans-serif);
   font-size: var(--main-font-size, 18px);
+  font-variation-settings: "wght" 400;
   background-size: cover;
+  background-attachment: fixed; /*изначально фиксировал, потом прочитал еще раз задание и убрал, видимо не так 
+                                понял - из задания "Фон фиксирован, скроллится со всей страницей." Скроллится - значит скроллится :) */
   padding: 100px 0;
 }
 
@@ -33,7 +36,7 @@
   padding: clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem) 0
     clamp(7.5rem, 7.1479rem + 1.5023vw, 8rem);
   background-color: var(--bg-color, #fff);
-  font-family: var(--accent-font, sans-serif);
+  font-family: var(--accent-font, fantasy);
   border: 2px solid #000;
   inline-size: var(--section_inline-size, 50vw);
 }
@@ -67,6 +70,7 @@
 
 .card-title {
   font-size: inherit;
+  font-variation-settings: "wght" 700;
   border: 2px solid var(--main-color, #000);
   border-block-end: none;
   padding: 3px 10px;
@@ -83,44 +87,45 @@
 .img {
   inline-size: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
-.free_track .img {
+.free_track {
   filter: saturate(0.8);
   object-position: bottom;
 }
 
-.first_sprint_clear .img {
+.first_sprint_clear {
   filter: sepia(50%) contrast(1.15);
 }
 
-.first_sprint_doubt .img {
+.first_sprint_doubt {
   filter: saturate(2.5);
 }
 
-.second_sprint_ideal .img {
+.second_sprint_ideal {
   filter: invert(1) brightness(0.9);
 }
 
-.second_sprint_support .img {
+.second_sprint_support {
   filter: hue-rotate(0.5);
 }
 
-.third_sprint_hands .img {
+.third_sprint_hands {
   filter: blur(1px) brightness(0.8) contrast(1.2);
 }
 
-.fourth_sprint_imhere .img {
+.fourth_sprint_imhere {
   filter: blur(2px) brightness(0.8) contrast(1.15);
 }
 
 .card-logo {
   position: absolute;
   inset: 0;
-  padding-block-start: 25px;
+  top: 25px;
   padding-inline-end: clamp(0.813rem, 0.548rem + 1.127vw, 1.563rem);
   text-align: end;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   font-size: var(--accent-font-size, 14px);
   opacity: 0.5;
   text-shadow: 0 0 2px var(--logo_stroke-color, #fff);
@@ -140,15 +145,17 @@
 
 .card_text-block {
   display: grid;
-  gap: 25px;
   padding: 25px;
   border: 2px solid #000;
   border-block-start: none;
   line-height: 21px;
+  gap: 25px;
 }
 
-.card-text p:not(:last-child) {
-  padding-block-end: 27px;
+.cart_text {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
 }
 
 .card_button_container {
@@ -179,7 +186,8 @@
   display: flex;
   border: 2px solid black;
   overflow: hidden;
-  transition: box-shadow 0.4s;
+  transition: box-shadow 0.3s ease; /* нет в задании сейчас конкретных условий - "Для box-shadow задайте те 
+                                    же настройки плавности, которые вы дважды использовали в шапке." Взял значения в пачке в комментариях наставника*/
 }
 
 .button:focus-visible {
@@ -204,7 +212,7 @@
 .button__text {
   position: relative;
   z-index: 1;
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   font-size: var(--accent-font-size, 14px);
   line-height: 90%;
   text-align: center;
@@ -216,10 +224,10 @@
   block-size: 38px;
 }
 
-.footer_button {
+.save_button {
   display: flex;
   inline-size: 339px;
-  block-size: 55px;
+  padding-block: 15px;
   gap: 10px;
 }
 
@@ -237,16 +245,20 @@
   border: 2px solid transparent;
 }
 
+.dialog_button .button__text {
+  text-transform: uppercase;
+}
+
 .sparks {
   opacity: 0;
 }
 
 /*--------------------/buttons-----------------------*/
 
-.footer {
+.save {
+  display: flex;
   justify-self: center;
   background-color: var(--bg-color, #fff);
-  margin-top: 50px;
 }
 
 .dialog_window[open] {
@@ -275,7 +287,7 @@
 }
 
 .dialog_text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font, fantasy);
   font-size: 14px;
   line-height: 150%;
   text-transform: uppercase;
@@ -291,13 +303,16 @@
 
 .page:has(dialog[open]) {
   overflow-y: hidden;
-  padding-inline-end: 15px; /* компенсация скрытия скролла */
+  padding-inline-end: 15px;
 }
 
 @media (width <= 375px) {
-  .footer_button {
+  .save_button {
     flex-direction: column;
-    gap: 0;
+    gap: 8px;
+  }
+  .icon {
+    width: 28px;
   }
 
   .header {
@@ -307,7 +322,7 @@
   }
 
   .header_headline {
-    font-size: 44px;
+    font-size: 49px;
   }
 
   .main {
