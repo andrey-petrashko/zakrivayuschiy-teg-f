@@ -183,7 +183,6 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  display: flex;
   border: 2px solid black;
   overflow: hidden;
   transition: box-shadow 0.3s ease; /* нет в задании сейчас конкретных условий - "Для box-shadow задайте те 
