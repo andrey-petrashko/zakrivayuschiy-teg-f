@@ -1,1 +1,1 @@
-https://andrey-petrashko.github.io/zakrivayuschiy-teg-f/
+https://github.com/andrey-petrashko/zakrivayuschiy-teg-f
