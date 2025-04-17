@@ -98,6 +98,22 @@
   filter: saturate(2.5);
 }
 
+.second_sprint_ideal .img {
+  filter: invert(1) brightness(0.9);
+}
+
+.second_sprint_support .img {
+  filter: hue-rotate(0.5);
+}
+
+.third_sprint_hands .img {
+  filter: blur(1px) brightness(0.8) contrast(1.2);
+}
+
+.fourth_sprint_imhere .img {
+  filter: blur(2px) brightness(0.8) contrast(1.15);
+}
+
 .card-logo {
   position: absolute;
   inset: 0;
