@@ -87,43 +87,49 @@
 .img {
   inline-size: 100%;
   object-fit: cover;
+}
+
+.object_position_center {
   object-position: center;
 }
 
-.free_track {
-  filter: saturate(0.8);
+.object_position_bottom {
   object-position: bottom;
 }
 
-.first_sprint_clear {
-  filter: sepia(50%) contrast(1.15);
+.filter_saturate {
+  filter: saturate(0.8);
 }
 
-.first_sprint_doubt {
-  filter: saturate(2.5);
+.filter_sepia_contrast {
+  filter: sepia(50%) contrast(1.5);
 }
 
-.second_sprint_ideal {
+.filter_saturate_brightness {
+  filter: saturate(2.5) brightness(1.1);
+}
+
+.filtert_invert_brightness {
   filter: invert(1) brightness(0.9);
 }
 
-.second_sprint_support {
-  filter: hue-rotate(0.5);
+.filter_hue-rotate {
+  filter: hue-rotate(10deg);
 }
 
-.third_sprint_hands {
+.filter_blur_brightness_contrast {
   filter: blur(1px) brightness(0.8) contrast(1.2);
 }
 
-.fourth_sprint_imhere {
-  filter: blur(2px) brightness(0.8) contrast(1.15);
+.filter_blur_brightness {
+  filter: blur(2px) brightness(0.8);
 }
 
 .card-logo {
   position: absolute;
   inset: 0;
   top: 25px;
-  padding-inline-end: clamp(0.813rem, 0.548rem + 1.127vw, 1.563rem);
+  right: clamp(0.813rem, 0.548rem + 1.127vw, 1.563rem);
   text-align: end;
   font-family: var(--accent-font, fantasy);
   font-size: var(--accent-font-size, 14px);
